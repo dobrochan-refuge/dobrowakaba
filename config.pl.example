@@ -46,9 +46,9 @@ use utf8;
 #use constant MAX_KB => 1000;					# Maximum upload size in KB
 #use constant MAX_W => 200;						# Images exceeding this width will be thumbnailed
 #use constant MAX_H => 200;						# Images exceeding this height will be thumbnailed
-#use constant MAX_RES => 20;					# Maximum topic bumps
-#use constant MAX_POSTS => 500;					# Maximum number of posts (set to 0 to disable)
-#use constant MAX_THREADS => 0;					# Maximum number of threads (set to 0 to disable)
+use constant MAX_RES => 1000;					# Maximum topic bumps
+use constant MAX_POSTS => 0;					# Maximum number of posts (set to 0 to disable)
+use constant MAX_THREADS => 0;					# Maximum number of threads (set to 0 to disable)
 #use constant MAX_AGE => 0;						# Maximum age of a thread in hours (set to 0 to disable)
 #use constant MAX_MEGABYTES => 0;				# Maximum size to use for all images in megabytes (set to 0 to disable)
 #use constant MAX_FIELD_LENGTH => 100;			# Maximum number of characters in subject, name, and email
@@ -101,8 +101,8 @@ use utf8;
 #use constant USE_SECURE_ADMIN => 0;			# Use HTTPS for the admin panel.
 #use constant CHARSET => 'utf-8';				# Character set to use, typically 'utf-8' or 'shift_jis'. Disable charset handling by setting to ''. Remember to set Apache to use the same character set for .html files! (AddCharset shift_jis html)
 #use constant CONVERT_CHARSETS => 1;			# Do character set conversions internally
-#use constant TRIM_METHOD => 0;					# Which threads to trim (0: oldest - like futaba 1: least active - furthest back)
-#use constant ARCHIVE_MODE => 0;				# Old images and posts are moved into an archive dir instead of deleted (0: no 1: yes). It is HIGHLY RECOMMENDED you use TRIM_METHOD => 1 with this, or you may end up with unreferenced pictures in your archive
+use constant TRIM_METHOD => 1;					# Which threads to trim (0: oldest - like futaba 1: least active - furthest back)
+use constant ARCHIVE_MODE => 1;				# Old images and posts are moved into an archive dir instead of deleted (0: no 1: yes). It is HIGHLY RECOMMENDED you use TRIM_METHOD => 1 with this, or you may end up with unreferenced pictures in your archive
 #use constant DATE_STYLE => 'futaba';			# Date style ('futaba', '2ch', 'localtime', 'tiny')
 #use constant DISPLAY_ID => '';					# How to display user IDs (0 or '': don't display,
 												#  'day' and 'board' in any combination: make IDs change for each day or board,
