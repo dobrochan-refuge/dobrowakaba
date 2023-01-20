@@ -1,5 +1,8 @@
 # use encoding 'shift-jis'; # Uncomment this to use shift-jis in strings. ALSO uncomment the "no encoding" at the end of the file!
 
+use utf8;
+#use encoding 'utf-8';
+
 #
 # Example config file.
 # 
@@ -170,6 +173,6 @@
 #	png => '.',
 #);
 
-# no encoding; # Uncomment this if you uncommented the "use encoding" at the top of the file
+no encoding; # Uncomment this if you uncommented the "use encoding" at the top of the file
 
 1;
