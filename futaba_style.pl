@@ -117,7 +117,7 @@ use constant PAGE_TEMPLATE => compile_template(NORMAL_HEAD_INCLUDE.q{
 		<if !$parent>
 			<if $image>
 				<span class="filesize"><const S_PICNAME><a target="_blank" href="<var expand_image_filename($image)>"><var get_filename($image)></a>
-				-(<em><var $size> B, <var $width>x<var $height></em>)</span>
+				(<em><var sprintf("%.1f", $size/1024)> KB, <var $width>x<var $height></em>)</span>
 				<span class="thumbnailmsg"><const S_THUMB></span><br />
 
 				<if $thumbnail>
@@ -177,7 +177,7 @@ use constant PAGE_TEMPLATE => compile_template(NORMAL_HEAD_INCLUDE.q{
 			<if $image>
 				<br />
 				<span class="filesize"><const S_PICNAME><a target="_blank" href="<var expand_image_filename($image)>"><var get_filename($image)></a>
-				-(<em><var $size> B, <var $width>x<var $height></em>)</span>
+				(<em><var sprintf("%.1f", $size/1024)> KB, <var $width>x<var $height></em>)</span>
 				<span class="thumbnailmsg"><const S_THUMB></span><br />
 
 				<if $thumbnail>
