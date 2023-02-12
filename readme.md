@@ -1,3 +1,19 @@
+This is a fork of the original Wakaba 3.0.9 with minimal patches.
+
+* Image size is displayed in kilobytes, not bytes;
+* config.pl uses UTF-8 (important for non-English boards);
+* Default config is a bit less conservative;
+* Night theme (Tomorrow);
+* Russian strings (strings_ru.pl).
+
+This repo also contains original, non-modified versions of Wakaba (see commit history).
+
+<hr />
+
+[Install Guide](https://some1suspicious.github.io/wakaba-original/install_guide.html)
+
+<hr />
+
 Welcome to Wakaba, pre-release version.
 
 There's no proper documentation yet.
@@ -42,5 +58,3 @@ http://.../wakaba.pl?action=rebuild&admin=ADMINPASSWORD
 Well, good luck. Report problems and bugs to me at paracelsus@gmail.com.
 
 — !WAHa.06x36
-
-[Install Guide](https://some1suspicious.github.io/wakaba-original/install_guide.html)
