@@ -3,6 +3,7 @@ This is a fork of the original Wakaba 3.0.9 with minimal patches.
 * Image size is displayed in kilobytes, not bytes;
 * config.pl uses UTF-8 (important for non-English boards);
 * Default config is a bit less conservative;
+* Support for iichan-style dates (Sun 12 Feb 2023 12:42:21).
 * Night theme (Tomorrow);
 * Russian strings (strings_ru.pl).
 

@@ -807,6 +807,12 @@ sub make_date($$;@)
 		return sprintf("%04d-%02d-%02d %02d:%02d",
 		1993,9,int ($time-$sep93)/86400+1,$ltime[2],$ltime[1]);
 	}
+	elsif($style eq "iichan")
+	{
+		my ($sec,$min,$hour,$mday,$mon,$year,$wday)=localtime($time);  # or gmtime($time)
+		return sprintf("%s %02d %s %04d %02d:%02d:%02d",
+		$days[$wday],$mday,$months[$mon],$year+1900,$hour,$min,$sec);
+	}
 }
 
 sub parse_http_date($)
